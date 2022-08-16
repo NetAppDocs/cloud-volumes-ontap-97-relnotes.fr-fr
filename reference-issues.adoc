@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: reference-issues.html 
+keywords: issues, bugs, known issues 
+summary: 'Les problèmes connus identifient les problèmes susceptibles de vous empêcher d"utiliser cette version du produit avec succès.' 
+---
+= Problèmes connus
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser cette version du produit avec succès.
+
+Vous trouverez les problèmes connus relatifs au logiciel ONTAP dans le https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notes de version de ONTAP"^].
+
+
+
+== L'arrêt des nœuds peut échouer sur les paires haute disponibilité avec plusieurs SVM
+
+Si vous prévoyez d'arrêter ou de redémarrer un nœud Cloud Volumes ONTAP dans une paire haute disponibilité qui comporte plusieurs VM de stockage (SVM), nous vous recommandons de pré-migrer toutes les interfaces logiques (LIF) vers le nœud partenaire avant d'arrêter le nœud.
+
+L'exemple suivant migre toutes les LIFs de données du nœud actuel (local) :
+
+`node1::> network interface migrate-all -node local`
+
+Cette action permet d'accélérer la transition du réseau vers le nœud partenaire et évite de temps à autre des problèmes connus liés à l'arrêt du nœud.
+
+Si le nœud ne peut pas être arrêté, car la migration des LIFs est trop importante, une nouvelle tentative de la commande reboot ou halt devrait l'arrêter.
