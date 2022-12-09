@@ -223,8 +223,8 @@ Si vous avez des questions, n'hésitez pas à nous contacter par le biais de la 
 
 Cloud Volumes ONTAP 9.7 RC1 est désormais disponible dans AWS, Azure et Google Cloud Platform. Outre les fonctionnalités introduites avec https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.7"^], Cette version de Cloud Volumes ONTAP inclut les éléments suivants :
 
-*  Cache support in Azure
-*  for Azure NIC detach events
+* <<Prise en charge de Flash cache dans Azure>>
+* <<Corriger pour les événements de déconnexion de la carte réseau Azure>>
 
 
 
