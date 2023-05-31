@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.7 comprend un certain nombre de nouvelles fonctio
 [role="lead"]
 Cloud Volumes ONTAP 9.7 comprend un certain nombre de nouvelles fonctionnalités et améliorations.
 
-D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
 
 
 
@@ -32,9 +32,9 @@ Vous pouvez désormais acheter plusieurs licences pour un système Cloud Volumes
 
 Le nombre de licences que vous pouvez acheter pour un système à un seul nœud ou une paire HA est illimité.
 
-Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Pour plus d'informations sur les limites de disques, reportez-vous aux limites de stockage indiquées dans ces notes de version.
+Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["tiering des données inactives vers le stockage objet"^]. Pour plus d'informations sur les limites de disques, reportez-vous aux limites de stockage indiquées dans ces notes de version.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Découvrez comment ajouter des licences système à Cloud Volumes ONTAP"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Découvrez comment ajouter des licences système à Cloud Volumes ONTAP"^].
 
 
 
@@ -173,7 +173,7 @@ Plusieurs nouveaux types d'instances EC2 sont désormais pris en charge avec Clo
 * r5.12xlarge ^2^
 
 
-^1^ ces types d'instances incluent le stockage NVMe local, que Cloud Volumes ONTAP utilise comme _Flash cache_. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["En savoir plus >>"^].
+^1^ ces types d'instances incluent le stockage NVMe local, que Cloud Volumes ONTAP utilise comme _Flash cache_. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["En savoir plus >>"^].
 
 ^2^ le type d'instance r5.12xlarge a une limitation connue de la prise en charge. Si un nœud redémarre de manière inattendue en raison d'un problème, le système peut ne pas collecter les fichiers « core » utilisés pour le dépannage et la racine du problème. Le client accepte les risques et les conditions d'assistance limitées et assume toute responsabilité en cas de problème.
 
@@ -237,7 +237,7 @@ Flash cache accélère l'accès aux données grâce à la mise en cache intellig
 
 Déployer de nouveaux systèmes utilisant ce type de VM ou modifier les systèmes existants pour utiliser ce type de VM, et vous pourrez automatiquement tirer parti de Flash cache.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["En savoir plus sur l'activation de Flash cache sur Cloud Volumes ONTAP, y compris la limitation de la compression des données"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["En savoir plus sur l'activation de Flash cache sur Cloud Volumes ONTAP, y compris la limitation de la compression des données"^].
 
 
 
@@ -252,7 +252,7 @@ Cette version résout un problème avec le redémarrage du nœud Cloud Volumes O
 * La mise à niveau d'Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
 * Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.7 à partir de la version 9.6. Cloud Manager vous invite à mettre à niveau vos systèmes Cloud Volumes ONTAP 9.6 existants vers la version 9.7.
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"^].
+http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"^].
 
 * La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
 * La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
