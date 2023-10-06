@@ -41,7 +41,7 @@ Pour certaines configurations, les limites de disque vous empêchent d'atteindre
 | PAIEMENT À L'UTILISATION Premium | 368 TO 
 
 
-| Licence basée sur les nœuds | 368 To par licence 
+| Licence basée sur les nœuds | 2 Pio (plusieurs licences requises) 
 
 
 | Licence basée sur la capacité | 2 Pio 
@@ -72,7 +72,7 @@ Le tableau ci-dessous présente la capacité maximale du système avec des disqu
 
 == Restrictions agrégées
 
-Cloud Volumes ONTAP regroupe les disques Google Cloud Platform dans des _aggrégats_. Les agrégats fournissent du stockage aux volumes.
+Cloud Volumes ONTAP regroupe les disques Google Cloud en _agrégats_. Les agrégats fournissent du stockage aux volumes.
 
 [cols="2*"]
 |===
@@ -106,7 +106,9 @@ Remarques :
 | Stockage logique | Paramètre | Limite 
 
 
-| *Machines virtuelles de stockage (SVM)* | Nombre maximum pour Cloud Volumes ONTAP | Un SVM de service des données et un SVM de destination utilisés pour la reprise après incident. Vous pouvez activer le SVM de destination pour l'accès aux données en cas de panne sur le SVM source. ^1^ le seul SVM qui transmet les données à l'ensemble du système Cloud Volumes ONTAP. 
+| *Machines virtuelles de stockage (SVM)* | Nombre maximum pour Cloud Volumes ONTAP | Un SVM de service des données et un SVM de destination utilisés pour la reprise après incident. En cas de panne sur le SVM source, vous pouvez activer le SVM de destination pour l'accès aux données. ^1^
+
+Un seul SVM assurant le service des données couvre l'ensemble du système Cloud Volumes ONTAP. 
 
 
 .2+| *Fichiers* | Taille maximale | 16 TO 
