@@ -112,7 +112,7 @@ NetApp continue à prendre en charge le Cloud Volumes ONTAP dans les régions pu
 * Allemagne de l'Ouest centrale (publique)
 
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions Azure prises en charge"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions Azure prises en charge"^].
 
 
 

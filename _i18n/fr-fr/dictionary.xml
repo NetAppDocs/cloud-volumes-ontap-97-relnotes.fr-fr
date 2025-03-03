@@ -223,7 +223,6 @@
   <block id="0c4c4e63836f218793463e3bcdaddf27" category="list-text">L'amélioration des performances d'écriture est activée lorsque les SSD sont utilisés avec Cloud Volumes ONTAP Standard, Premium et BYOL.</block>
   <block id="907c78338365697be8fd8d4a130503c8" category="list-text">Il n'est pas recommandé de faire le Tiering des données dans le stockage objet lors de l'utilisation de disques durs à débit optimisé (st1).</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Régions Cloud volumes Global</block>
-  <block id="4375839c669e051e5f2a8de11ba0c5d0" category="list-text">Pour la prise en charge de chaque région AWS, consultez la section<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">Cloud Volumes ONTAP peut être exécuté sur une instance de machine virtuelle réservée ou à la demande auprès de votre fournisseur cloud. Les solutions qui utilisent d'autres types d'instances VM ne sont pas prises en charge.</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">Tailles de disque prises en charge</block>
   <block id="f1ef8a69abb63b240d611c09ea5ddde6" category="paragraph">Dans AWS, un agrégat peut contenir jusqu'à 6 disques de même type et de même taille.</block>
@@ -304,7 +303,6 @@
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="list-text">Le type de machine Custom-4-16384 n'est plus pris en charge par les nouveaux systèmes Cloud Volumes ONTAP.</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">Si vous disposez d'un système existant fonctionnant sur ce type de machine, vous pouvez continuer à l'utiliser, mais nous vous recommandons de passer au type de machine n2-standard-4.</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">Les performances d'écriture améliorées sont activées lorsque l'utilisation de disques SSD est utilisée.</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">Pour la prise en charge par région Google Cloud Platform, rendez-vous sur<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">Dans Google Cloud, un agrégat peut contenir jusqu'à 6 disques de même type et de même taille. Les tailles de disque suivantes sont prises en charge :</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100 GO</block>
   <block id="70f79b00cb7649d94d473895d6c540d2" category="list-text">1 To</block>
@@ -363,7 +361,6 @@
   <block id="ce8c95cf9de92e0d85852b999d00a17a" category="list-text">Allemagne du Nord (publique)</block>
   <block id="cfdd4f6f66dabd2b425ab10b5c56c3da" category="list-text">Allemagne de l'Ouest centrale (publique)</block>
   <block id="4a977616fcd7ade62dbf55a1f8db1bd0" category="inline-link">Consultez la liste complète des régions Azure prises en charge</block>
-  <block id="07a1c66013de0c57f2bd7d69d3354c41" category="paragraph"><block ref="0f846b36f06a975303e325a2ffb2c92b" category="inline-link-rx"></block>.</block>
   <block id="12f1dfb594b821e25e55ab014437acc4" category="section-title">9.7 P4 (2 juin 2020)</block>
   <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link">Consultez la liste des bugs corrigés dans le patch P4</block>
   <block id="cbbe5951f603eb168d6ea68a73b678bc" category="paragraph">La version 9.7 P4 du correctif pour Cloud Volumes ONTAP est désormais disponible via Cloud Manager 3.8 et versions ultérieures. Cloud Manager vous invite à mettre à niveau vos systèmes existants vers cette version de correctif.<block ref="37b180138fbfa25f28dd1e0aa35747d2" category="inline-link-rx"></block> (Identifiant du site du support NetApp requis).</block>
@@ -465,7 +462,6 @@
   <block id="24aa50b65a436c4efc843ed62aab1f03" category="list-text">Le Tiering des données vers le stockage Azure Blob n'est pas pris en charge avec PAYGO Explore.</block>
   <block id="0a1f6a0fa33e6a786e0c1f71a0ea33a9" category="list-text">Ce type de VM utilise un<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> Pour VNVRAM, ce qui offre de meilleures performances d'écriture.</block>
   <block id="a63be6f12cd03be8e118239f1f944bda" category="list-text">Les performances améliorées en écriture sont activées lors de l'utilisation de disques SSD, mais pas avec le type de machine virtuelle DS3_v2.</block>
-  <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">Pour la prise en charge par région Azure, consultez la section<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">Paires HA</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">Lors du déploiement de Cloud Volumes ONTAP en tant que paire HA dans Azure, vous pouvez choisir l'une des configurations suivantes.</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">Types de disques pris en charge</block>
@@ -525,7 +521,6 @@
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">Les solutions de gestion automatique des ressources applicatives ne doivent pas être utilisées</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">Pour la haute disponibilité, la capacité de licence est-elle limitée par nœud ou pour la paire HA entière ?</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">Pour un système haute disponibilité dans AWS, est-ce que les données en miroir sont prises en compte avec la limite de capacité ?</block>
-  <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité en utilisant uniquement des disques. Dans ce cas, vous pouvez atteindre la limite de capacité de<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Pour plus d'informations sur les limites de disques, reportez-vous à la section <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="d424e7f11ba3f8c54b78553f58815d63" category="list-text">Ces types d'instances incluent le stockage NVMe local, que Cloud Volumes ONTAP utilise _Flash cache_. Flash cache accélère l'accès aux données grâce à la mise en cache intelligente en temps réel des données utilisateur et des métadonnées NetApp lues récemment. Il est efficace pour les charges de travail exigeant une capacité de lecture aléatoire maximale, dont les bases de données, la messagerie et les services de fichiers. La compression doit être désactivée sur tous les volumes pour tirer parti des améliorations des performances de Flash cache.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
@@ -563,4 +558,9 @@ Un seul SVM assurant le service des données couvre l'ensemble du système Cloud
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Limites de l'utilisation des extensions de machines virtuelles Azure</block>
   <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Dans un déploiement, Cloud Volumes ONTAP ne prend pas en charge les extensions de machines virtuelles et les applications de machines virtuelles Azure. L'utilisation d'Cloud Volumes ONTAP dans Azure avec des extensions de machine virtuelle entraîne des retards dans les opérations, et NetApp recommande de les éviter.</block>
   <block id="397c7d6cf1f12b7b8d421a9c73013b76" category="sidebar">Notes de version de Cloud Volumes ONTAP 9.7</block>
+  <block id="0890aa708cef7529c2bd35cb7d2895df" category="list-text">Pour la prise en charge des régions AWS, voir<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="f0de068c81c765820aca0fa8fe017396" category="list-text">Pour la prise en charge des régions Azure, voir<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="ef9be83cb59b0572a3581a6724316e48" category="list-text">Pour obtenir une prise en charge par région de Google Cloud Platform, consultezla section<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="26f113c6240bf0450440356676516cf1" category="paragraph"><block ref="26f113c6240bf0450440356676516cf1" category="inline-link-rx"></block></block>
+  <block id="045622dfb07c6145c4ccaf9f2078e56b" category="paragraph"><block ref="782e925b243dc89a59a0bc67d50ce99b" category="inline-link-rx"></block>.</block>
 </blocks>

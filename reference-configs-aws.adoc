@@ -158,7 +158,7 @@ Remarques :
 . Le type d'instance r5.12xlarge présente une limitation connue avec la prise en charge. Si un nœud redémarre de manière inattendue en raison d'un problème, le système peut ne pas collecter les fichiers « core » utilisés pour le dépannage et la racine du problème. Le client accepte les risques et les conditions d'assistance limitées et assume toute responsabilité en cas de problème.
 . L'amélioration des performances d'écriture est activée lorsque les SSD sont utilisés avec Cloud Volumes ONTAP Standard, Premium et BYOL.
 . Il n'est pas recommandé de faire le Tiering des données dans le stockage objet lors de l'utilisation de disques durs à débit optimisé (st1).
-. Pour la prise en charge de chaque région AWS, consultez la section https://cloud.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
+. Pour la prise en charge des régions AWS, voir https://bluexp.netapp.com/cloud-volumes-global-regions["Régions Cloud volumes Global"^].
 . Cloud Volumes ONTAP peut être exécuté sur une instance de machine virtuelle réservée ou à la demande auprès de votre fournisseur cloud. Les solutions qui utilisent d'autres types d'instances VM ne sont pas prises en charge.
 
 
